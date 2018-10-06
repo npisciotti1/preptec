@@ -2,67 +2,8 @@ html {
   background-color: #343a40;
 }
 
-.navbar {
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-  box-shadow: 0 10px 10px 0 rgba(0,0,0,.15)
-}
-
 .title {
   font-family: 'Carter One';
-}
-
-.jumbotron {
-  background: none;
-  margin-top: -7px;
-  padding: 0;
-}
-
-.past-work-section {
-  width: 100%;
-  margin: 40px 0;g
-}
-
-#nikko-photo {
-  border-radius: 10px;
-}
-
-#bpd-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#bpd-logo {
-  background-color: black;
-  border-radius: 10px;
-  padding: 10px;
-  width: 80%;
-}
-
-.icons-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.skill-icon {
-  margin-top: 5%;
-  flex-basis: 33%;
-}
-
-.skill-icon img {
-  display: inline-block;
-  width: 3.75vw;
-  height: 3.75vw;
-  vertical-align: middle;
-  margin-bottom: 8px;
-}
-
-.skill-icon .icon-name {
-  display: inline-block;
-  margin-left: 3%;
-  font-size: 1.1rem;
 }
 
 .footer-container {
@@ -77,12 +18,4 @@ html {
 
 .footer p {
   margin-bottom: 0;
-}
-
-.scroll-anchor {
-  position: relative;
-  bottom: 100px;
-  opacity: 0;
-  height: 0;
-  width: 0;
 }
