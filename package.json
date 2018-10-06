@@ -1,0 +1,12 @@
+{
+    "title": "Bare",
+    "name": "twofolio",
+    "version": "4.1.3",
+    "homepage": "https://startbootstrap.com/template-overviews/bare",
+    "license": "MIT",
+    "author": "Sneaky Neeks",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npisciotti1/twofolio"
+    },
+}

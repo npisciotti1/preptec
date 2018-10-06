@@ -1,0 +1,46 @@
+.underline {
+  text-decoration: underline;
+}
+
+[class*='col-'] {
+  float: left;
+}
+
+.container::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+[class*='spacer'] {
+  display: block;
+  width: 100%;
+}
+
+.spacer15 {
+  height: 25px;
+}
+
+.spacer25 {
+  height: 25px;
+}
+
+.spacer50 {
+  height: 50px;
+}
+
+.spacer75 {
+  height: 75px;
+}
+
+.spacer100 {
+  height: 100px;
+}
+
+.margin-top10 {
+  margin-top: 10px;
+}
+
+.margin-bottom10 {
+  margin-bottom: 10px;
+}
