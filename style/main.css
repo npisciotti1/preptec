@@ -17,7 +17,12 @@
 }
 
 .icon-group {
-  margin: 50px 0;
+  margin: 4vw 0;
+}
+
+.awardimg {
+  display: block;
+  margin: 0 auto;
 }
 
 .font-main {
