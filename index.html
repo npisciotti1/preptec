@@ -11,8 +11,12 @@
     <title>Preptec Solutions</title>
 
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Carter+One|Raleway|Source+Serif+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
     <link href="style/main.css" rel="stylesheet">
+    <link href="style/nav.css" rel="stylesheet">
+    <link href="style/slideout-nav.css" rel="stylesheet">
+    <link href="style/hamburger.css" rel="stylesheet">
     <link href="style/utility.css" rel="stylesheet">
     <link href="style/responsive.css" rel="stylesheet">
 
@@ -21,81 +25,159 @@
 
   <body>
 
-    <!-- Nav -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
-      <div class="container">
-        <a class="navbar-brand title" href="#">Preptec Solutions</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#intro-anchor" data-scroll>Intro</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#past-work-anchor" data-scroll>Past Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact-anchor" data-scroll>Contact</a>
-            </li>
-          </ul>
-        </div>
+    <!-- Hamburger Icon -->
+    <div class="burger-wrap">
+      <a id="hamburger" class="hamburger-icon">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </a>
+    </div>
+    <!-- hidden 'slideout' menu for mobile -->
+    <div id="slideoutNav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FAQ</a></li></ul>
+    </div>
+
+    <!-- all content below is 'pushed' left on mobile menu click -->
+    <div id="page-wrapper">
+    <div id="fullscreen-trigger"></div>
+
+    <!-- fullscreen nav -->
+    <nav>
+      <div class="col-sm-1"></div>
+      <div class="col-sm-3">
+        <img class="logo img-fluid" src="assets/logo_main.png" alt="PrepTEC Solutions Logo">
+      </div>
+      <div class="col-sm-2"></div>
+      <div class="menu col-sm-6 container">
+        <ul class="full-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
       </div>
     </nav>
 
+    <div class="spacer25"></div>
     <div class="spacer100"></div>
 
-
-
-    <div id="contact-anchor" class="scroll-anchor" ></div>
-
-    <!-- Contact -->
-    <div id="contact" class="container">
-      <div class="col-sm-5">
-        <h2 class="display-5 ">Contact</h2>
-        <hr class="my-4">
-
-        <!--  TODO: setup formspree -->
-        <form method="POST" action="https://formspree.io/">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Subject</label>
-            <input type="text" class="form-control" name="subject" placeholder="Email Subject" required>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Email</label>
-            <input type="email" class="form-control" name="email" placeholder="example@example.com" required>
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Message</label>
-            <textarea class="form-control" name="message" placeholder="Message" required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-outline-primary">Send</button>
-        </form>
+      <div class="banner-main">
+        <div class="banner-img-wrap">
+          <img class="img-fluid banner-bg" src="assets/seattle_sky.jpg"></img>
+          <img class="img-fluid banner-bg-opaque" src="assets/seattle_sky_opaque.jpg"></img>
+          <div class="gradient-overlay"></div>
+        </div>
+        <!-- Mock Disaster Team Building Banner -->
+        <div class="container banner-text">
+            <h2>Comprehensive and Inclusive</h2>
+            <h1 class="strong">Mock Disaster Team Building</h1>
+            <p class="banner-desc">A 60-minute custom course designed for your people and your business. Learn how you can effectively prepare for any unforeseen crisis.</p>
+            <button class="btn btn-primary">Schedule Demo</button>
+        </div>
       </div>
+
+      <div class="spacer100"></div>
+
+      <!-- Steps -->
+      <div class="wrapper">
+        <div style="padding-top: 7px;" class="col-sm-5">
+          <img class="img-fluid border-radius5" src="assets/planning.jpg"></img>
+
+          <div class="spacer35"></div>
+
+          <img class="img-fluid border-radius5" src="assets/seattle_waterfront.png"></img>
+        </div>
+
+        <div class="col-sm-7">
+          <h2 class="font-main">This is a description of our process - kind of like a tag line and reason we're cool.</h2>
+
+          <div class="spacer15"></div>
+
+          <div class="icon-group wrapper">
+            <div class="col-3">
+              <img class="img-fluid" src="assets/icons/people.png"></img>
+            </div>
+            <div class="col-9">
+              <h3>Topic 1</h3>
+              <p>Some cool description of this topic and such</p>
+            </div>
+          </div>
+
+          <div class="icon-group wrapper">
+            <div class="col-3">
+              <img class="img-fluid" src="assets/icons/notepad.png"></img>
+            </div>
+            <div class="col-9">
+              <h3>Topic 2</h3>
+              <p>Some cool description of this topic and such</p>
+            </div>
+          </div>
+
+          <div class="icon-group wrapper">
+            <div class="col-3">
+              <img class="img-fluid" src="assets/icons/warning.png"></img>
+            </div>
+            <div class="col-9">
+              <h3>Topic 3</h3>
+              <p>Some cool description of this topic and such</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+      <!-- Contact -->
+      <div id="contact" class="wrapper font-main">
+        <div class="col-sm-5">
+          <h2 class="display-5 ">Contact</h2>
+          <hr class="my-4">
+
+          <!--  TODO: setup formspree -->
+          <form method="POST" action="https://formspree.io/">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Subject</label>
+              <input type="text" class="form-control" name="subject" placeholder="Email Subject" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Email</label>
+              <input type="email" class="form-control" name="email" placeholder="example@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Message</label>
+              <textarea class="form-control" name="message" placeholder="Message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-outline-primary">Send</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <footer class="footer bg-dark text-center">
+          <div class="spacer25"></div>
+          <p>Copyright 2018 Preptec Solutions</p>
+        </footer>
+      </div>
+
+      <!-- local scripts -->
+      <script src="vendor/jquery/jquery.min.js"></script>
+      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="js/nav-items.js"></script>
+      <script src="js/nav-scroll.js"></script>
+      <script src="js/hamburger.js"></script>
+
+      <!-- external stuff -->
+      <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     </div>
-
-    <div class="footer-container">
-      <footer class="footer bg-dark text-center">
-        <div class="spacer25"></div>
-        <p>Copyright 2018 Preptec Solutions</p>
-      </footer>
-    </div>
-
-    <!-- local scripts -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/tech-icons.js"></script>
-
-    <!-- external stuff -->
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-
-    <script>
-	   var scroll = new SmoothScroll('a[href*="#"]');
-    </script>
-
   </body>
 
 </html>

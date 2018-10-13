@@ -1,6 +1,13 @@
+@media (min-width: 992px) {
+
+}
+
 @media (min-width: 576px) and (max-width: 991px) {
 
 }
 
 @media (max-width: 575px) {
+  .icon-group {
+    margin: 50px 0;
+  }
 }

@@ -25,6 +25,10 @@
   height: 25px;
 }
 
+.spacer35 {
+  height: 35px;
+}
+
 .spacer50 {
   height: 50px;
 }
@@ -37,12 +41,32 @@
   height: 100px;
 }
 
+.spacer300 {
+  height: 300px;
+}
+
 .margin-top10 {
   margin-top: 10px;
 }
 
 .margin-bottom10 {
   margin-bottom: 10px;
+}
+
+.remove-padding {
+  padding: 0 !important;
+}
+
+.pad-top10 {
+  padding-top: 10px;
+}
+
+.pad-top50 {
+  padding-top: 50px;
+}
+
+.border-radius5 {
+  border-radius: 5px;
 }
 
 .scroll-anchor {

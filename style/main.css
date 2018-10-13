@@ -1,9 +1,27 @@
-html {
-  background-color: #343a40;
+* {
+  font-family: 'Lato' !important;
 }
 
-.title {
-  font-family: 'Carter One';
+.wrapper {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.wrapper::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.icon-group {
+  margin: 50px 0;
+}
+
+.font-main {
+  color: #105182;
 }
 
 .footer-container {
