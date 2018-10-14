@@ -75,6 +75,24 @@
   -moz-transform: translateY(-15px) translateX(0) rotate(-45deg);
 }
 
+@media (max-width: 575px) {
+.hamburger-wrap {
+  right: -20px;
+  top: 10px;
+}
+
+  .hamburger-icon > .line {
+    width: 35px;
+    height: 5px;
+  }
+
+  .hamburger-icon.active .line:nth-child(1) {
+    transform: translateY(9px) translateX(0) rotate(45deg);
+    -webkit-transform: translateY(9px) translateX(0) rotate(45deg);
+    -moz-transform: translateY(9px) translateX(0) rotate(45deg);
+  }
+}
+
 @media (max-width: 991px) {
   .hamburger-icon {
     display: block;

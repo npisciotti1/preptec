@@ -2,6 +2,10 @@
   max-height: 100px;
 }
 
+.logo-wrap-mobile {
+  display: none;
+}
+
 .banner-main {
   width:100%;
   position: relative;
@@ -9,12 +13,17 @@
 
 .banner-text {
   position: absolute;
-  top: 21%;
+  top: 20%;
   right: 0;
   float: right;
-  width: 60%;
-  color: #105182;
+  width: 62%;
+  color: #0f3350;
 }
+
+.banner-text p {
+  color: black;
+}
+
 .banner-text h1 {
   font-size: 45px;
   font-weight: bold;
@@ -88,34 +97,70 @@ nav ul li a {
   background: #FFF;
 }
 
-@media(max-width: 625px) {
-  .banner-text {
-    right: 0;
-    width: 91%;
-  }
-  .banner-text button {
-    width: 20vw;
-    font-size: 2.25vw
-  }
-}
 
 @media (max-width: 575px) {
   .banner-text {
     right: 6%;
-    top: 15.5%;
-    padding: 0 7.5%;
+    top: 10.5%;
+    padding: 0 5%;
   }
 
-  .gradient-overlay {
+  .logo-wrap-full {
     display: none;
+  }
+
+  .logo-wrap-mobile {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .banner-text h2 {
+    font-size: 4vw;
+  }
+  .banner-text h1 {
+    font-size: 5vw;
+  }
+  .banner-desc {
+    font-size: 2.5vw;
+  }
+}
+
+@media(max-width: 400px) {
+  .banner-text {
+    right: 4%;
+    top: 9%;
+  }
+}
+
+@media(max-width: 625px) {
+  .banner-text {
+    width: 91%;
+  }
+  .banner-text button {
+    width: 20vw;
+    font-size: 2vw;
+    height: 5vw;
+    padding: 0%;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
   .banner-text {
     right: 5%;
-    top: 16%;
+    top: 15%;
     width: 100%;
+  }
+  .banner-text h2 {
+    font-size: 3.5vw;
+  }
+  .banner-text h1 {
+    font-size: 4.5vw;
+  }
+  .banner-desc {
+    font-size: 2vw;
   }
 }
 
@@ -126,16 +171,10 @@ nav ul li a {
   .banner-bg-opaque {
     display: block;
   }
+  .gradient-overlay {
+    display: none;
+  }
 
-  .banner-text h2 {
-    font-size: 4.5vw;
-  }
-  .banner-text h1 {
-    font-size: 5.5vw;
-  }
-  .banner-desc {
-    font-size: 2.75vw;
-  }
 }
 
 @media(min-width: 768px) and (max-width: 991px) {
