@@ -10,4 +10,7 @@
   .icon-group {
     margin: 50px 0;
   }
+  .hide-mobile {
+    display: none;
+  }
 }

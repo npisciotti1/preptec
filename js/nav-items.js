@@ -19,4 +19,14 @@
 			node.classList.remove('active');
 		}
 	}
+
+	let mobileNavItems = Array.prototype.slice.call(document.querySelectorAll('.mobile-nav-item'))
+
+	for(var i = 0; i < mobileNavItems.length; i++) {
+		var node = mobileNavItems[i];
+
+		node.addEventListener('mouseover', function() {
+			//do style stuff
+		})
+	}
 })();

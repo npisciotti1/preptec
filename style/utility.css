@@ -18,7 +18,11 @@
 }
 
 .spacer15 {
-  height: 25px;
+  height: 15px;
+}
+
+.spacer20 {
+  height: 20px;
 }
 
 .spacer25 {

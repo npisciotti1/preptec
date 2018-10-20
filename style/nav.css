@@ -202,5 +202,7 @@ nav ul li a {
 }
 
 @media(min-width: 1200px) {
-
+  .banner-text button {
+    padding: 10px 20px;
+  }
 }
