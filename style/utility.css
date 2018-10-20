@@ -67,6 +67,10 @@
   padding: 0 !important;
 }
 
+.remove-margin {
+  margin: 0 !important;
+}
+
 .pad-top10 {
   padding-top: 10px;
 }
