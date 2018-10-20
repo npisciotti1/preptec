@@ -57,6 +57,11 @@
   z-index: -1;
 }
 
+.slideout-btn {
+  margin-left: 65px;
+  margin-top: 10px;
+}
+
 .footer-container {
   width: 100%;
   margin-top: 50px;

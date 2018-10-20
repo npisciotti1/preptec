@@ -52,18 +52,10 @@
   align-items: center;
 }
 
-#slideoutNav ul li::before {
-  content: '';
-  width: 3px;
-  height: 60px;
-  background-color: #105182;
-  position: absolute;
-  left: 0;
-  opacity: 0;
-}
+
 
 #slideoutNav ul li:hover {
-  
+  border-left: 8px solid #105182;
 }
 
 #slideoutNav ul li:last-child {
