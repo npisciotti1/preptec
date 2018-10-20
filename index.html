@@ -10,6 +10,15 @@
 
     <title>Preptec Solutions</title>
 
+    <!-- favicons for all platforms -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
@@ -36,11 +45,14 @@
     <!-- hidden 'slideout' menu for mobile -->
     <div id="slideoutNav">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">FAQ</a></li></ul>
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">About</a></li>
+        <li class="nav-item"><a href="#">Awards</a></li>
+        <li class="nav-item"><a href="#">Contact</a></li>
+      </ul>
+      <div class="wrapper">
+        <button class="btn btn-primary slideout-btn" data-toggle="modal" data-target="#modal">Schedule Demo</button>
+      </div>
     </div>
 
     <!-- all content below is 'pushed' left on mobile menu click -->
@@ -48,19 +60,20 @@
     <div id="fullscreen-trigger"></div>
 
     <!-- fullscreen nav -->
+    <!-- TODO add styling for 'active' nav items, also on mobile menu -->
     <nav>
-      <div class="col-sm-1"></div>
-      <div class="col-sm-3">
+      <div class="col-sm-6 logo-wrap-full">
         <img class="logo img-fluid" src="assets/logo_main.png" alt="PrepTEC Solutions Logo">
       </div>
-      <div class="col-sm-2"></div>
+      <div class="col-8 logo-wrap-mobile">
+        <img class="logo img-fluid" src="assets/logo_main.png" alt="PrepTEC Solutions Logo">
+      </div>
       <div class="menu col-sm-6 container">
         <ul class="full-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">FAQ</a></li>
+          <li class="nav-item"><a href="#">Home</a></li>
+          <li class="nav-item"><a href="#">About</a></li>
+          <li class="nav-item"><a href="#">Awards</a></li>
+          <li class="nav-item"><a href="#">Contact</a></li>
         </ul>
       </div>
     </nav>
@@ -70,82 +83,112 @@
 
       <div class="banner-main">
         <div class="banner-img-wrap">
-          <img class="img-fluid banner-bg" src="assets/seattle_sky.jpg"></img>
-          <img class="img-fluid banner-bg-opaque" src="assets/seattle_sky_opaque.jpg"></img>
+          <img class="img-fluid banner-bg" src="assets/seattle_sky2.jpg"></img>
+          <img class="img-fluid banner-bg-opaque" src="assets/seattle_sky_opaque2.jpg"></img>
           <div class="gradient-overlay"></div>
         </div>
         <!-- Mock Disaster Team Building Banner -->
         <div class="container banner-text">
-            <h2>Comprehensive and Inclusive</h2>
+            <h2>Protect Your People</h2>
             <h1 class="strong">Mock Disaster Team Building</h1>
-            <p class="banner-desc">A 60-minute custom course designed for your people and your business. Learn how you can effectively prepare for any unforeseen crisis.</p>
-            <button class="btn btn-primary">Schedule Demo</button>
+            <p class="banner-desc">Customized 60 minute training to galvanize your people into a cohesive unit when faced with a threat or natural disaster. A real-world shelter in place and evacuation rehearsal will inspire confidence in your employees so they have the skills and training to work together when it’s not a drill.</p>
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modal">Schedule Demo</button>
+        </div>
+      </div>
+
+      <div class="spacer75"></div>
+
+      <!-- Main Section -->
+      <h2 class="font-main text-center">Need description of business or motto/mission statement.</h2>
+      <h5 class="text-center">Something else here could help fill out the page, possibly an extended mission statement.</h5>
+
+      <div class="spacer50"></div>
+
+      <div class="wrapper">
+        <div style="padding-top: 7px;" class="col-sm-5">
+          <img class="img-fluid border-radius5" src="assets/planning.jpg"></img>
+        </div>
+        <div class="col-sm-7">
+          <div class="icon-group wrapper">
+            <div class="col-3 hide-mobile">
+              <img class="img-fluid" src="assets/icons/building.png"></img>
+            </div>
+            <div class="col-sm-9 col-12 remove-padding">
+              <h3>Our Process</h3>
+              <p>Included in Team Building: Initial assessment, customized team building designed for your disaster plan, after session report, and complementary pizza lunch with actionable ideas for employee’s family home preparation plan.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div style="padding-top: 7px;" class="col-sm-5">
+          <img class="img-fluid border-radius5" src="assets/van_sm.png"></img>
+        </div>
+        <div class="col-sm-7">
+          <div class="icon-group wrapper">
+            <div class="col-3 hide-mobile">
+              <img class="img-fluid" src="assets/icons/people.png"></img>
+            </div>
+            <div class="col-sm-9 col-12 remove-padding">
+              <h3>Our Partners</h3>
+              <p>PrepTECsolutions brings you a complete licensed solution with our Partners:
+                <a href="https://www.rockdovesolutions.com" target="_blank">Rockdove Solutions</a>,
+                <a href="http://www.preparesmart.com/" target="_blank">PrepareSmart</a>, and
+                <a href="http://www.highriseescapesystems.com/" target="_blank">High Rise Escape Systems</a> to bring preparedness from a three ring binder on a shelf into the </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div style="padding-top: 7px;" class="col-sm-5">
+          <img class="img-fluid border-radius5" src="assets/planning.jpg"></img>
+        </div>
+        <div class="col-sm-7">
+          <div class="icon-group wrapper">
+            <div class="col-3 hide-mobile">
+              <img class="img-fluid" src="assets/icons/preptec_icon.png"></img>
+            </div>
+            <div class="col-sm-9 col-12 remove-padding">
+              <h3>About Us</h3>
+              <p>PrepTECsolutions was created help people survive together in the panic of a major disaster. We suggest you start with team building. We also provide crisis communication, high rise evacuation systems, and emergency supplies to make it easy and cost effective for companies to prepare their people. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="spacer50"></div>
+
+      <div class="wrapper">
+        <h3 class="text-center font-main awardheader">We are the distinct recipient of the Homeland Security Award for eight consecutive years.</h3>
+
+        <div class="spacer50"></div>
+
+        <div class="col-4">
+          <img class="img-fluid awardimg" src="assets/award1.png"></img>
+        </div>
+        <div class="col-4">
+          <img class="img-fluid awardimg" src="assets/award3.png"></img>
+        </div>
+        <div class="col-4">
+          <img class="img-fluid awardimg" src="assets/award2.png"></img>
         </div>
       </div>
 
       <div class="spacer100"></div>
 
-      <!-- Steps -->
-      <div class="wrapper">
-        <div style="padding-top: 7px;" class="col-sm-5">
-          <img class="img-fluid border-radius5" src="assets/planning.jpg"></img>
-
-          <div class="spacer35"></div>
-
-          <img class="img-fluid border-radius5" src="assets/seattle_waterfront.png"></img>
-        </div>
-
-        <div class="col-sm-7">
-          <h2 class="font-main">This is a description of our process - kind of like a tag line and reason we're cool.</h2>
-
-          <div class="spacer15"></div>
-
-          <div class="icon-group wrapper">
-            <div class="col-3">
-              <img class="img-fluid" src="assets/icons/people.png"></img>
-            </div>
-            <div class="col-9">
-              <h3>Topic 1</h3>
-              <p>Some cool description of this topic and such</p>
-            </div>
-          </div>
-
-          <div class="icon-group wrapper">
-            <div class="col-3">
-              <img class="img-fluid" src="assets/icons/notepad.png"></img>
-            </div>
-            <div class="col-9">
-              <h3>Topic 2</h3>
-              <p>Some cool description of this topic and such</p>
-            </div>
-          </div>
-
-          <div class="icon-group wrapper">
-            <div class="col-3">
-              <img class="img-fluid" src="assets/icons/warning.png"></img>
-            </div>
-            <div class="col-9">
-              <h3>Topic 3</h3>
-              <p>Some cool description of this topic and such</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-
-
       <!-- Contact -->
       <div id="contact" class="wrapper font-main">
-        <div class="col-sm-5">
+        <div class="col-12 col-sm-10 col-md-8 col-lg-6 logo-bg">
           <h2 class="display-5 ">Contact</h2>
           <hr class="my-4">
 
           <!--  TODO: setup formspree -->
-          <form method="POST" action="https://formspree.io/">
+          <form method="POST" action="https://formspree.io/martycalvert3@gmail.com">
             <div class="form-group">
               <label for="exampleInputEmail1">Subject</label>
-              <input type="text" class="form-control" name="subject" placeholder="Email Subject" required>
+              <input type="text" class="form-control" name="subject" placeholder="Subject" required>
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Email</label>
@@ -163,9 +206,25 @@
 
       <div class="footer-container">
         <footer class="footer bg-dark text-center">
-          <div class="spacer25"></div>
-          <p>Copyright 2018 Preptec Solutions</p>
+          <p>Copyright &copy; 2018 Preptec Solutions</p>
+          <p>Owened and operated by High Rise Safety and Escape LLC</p>
         </footer>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="modalLabel">Schedule a Training</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer"></div>
+          </div>
+        </div>
       </div>
 
       <!-- local scripts -->
@@ -174,6 +233,8 @@
       <script src="js/nav-items.js"></script>
       <script src="js/nav-scroll.js"></script>
       <script src="js/hamburger.js"></script>
+      <script src="js/modal.js"></script>
+
 
       <!-- external stuff -->
       <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>

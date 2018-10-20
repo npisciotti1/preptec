@@ -17,11 +17,49 @@
 }
 
 .icon-group {
-  margin: 50px 0;
+  margin-bottom: 4vw;
+}
+
+.awardimg {
+  display: block;
+  margin: 0 auto;
+}
+
+.awardheader {
+  padding: 0 10%;
 }
 
 .font-main {
   color: #105182;
+}
+
+.logo-bg {
+  height: 100%;
+}
+
+.logo-bg {
+  margin: 0 auto;
+  float: none !important;
+}
+
+.logo-bg::after {
+  background-image:url('../assets/pt_building.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  content: "";
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.slideout-btn {
+  margin-left: 65px;
+  margin-top: 10px;
 }
 
 .footer-container {
@@ -32,6 +70,7 @@
 .footer {
   height: 100px;
   color: white;
+  padding: 25px 0;
 }
 
 .footer p {

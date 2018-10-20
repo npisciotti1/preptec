@@ -18,7 +18,11 @@
 }
 
 .spacer15 {
-  height: 25px;
+  height: 15px;
+}
+
+.spacer20 {
+  height: 20px;
 }
 
 .spacer25 {
@@ -53,8 +57,18 @@
   margin-bottom: 10px;
 }
 
+.flex-center {
+  display: flex;
+  justify-content: center;
+  text-align: center
+}
+
 .remove-padding {
   padding: 0 !important;
+}
+
+.remove-margin {
+  margin: 0 !important;
 }
 
 .pad-top10 {
