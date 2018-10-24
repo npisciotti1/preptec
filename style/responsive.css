@@ -1,16 +1,34 @@
+@media (min-width: 1200px) {
+
+}
+
 @media (min-width: 992px) {
 
+}
+
+@media (max-width: 992px) {
+  .image-group div:nth-child(2) {
+    margin-top: 15px;
+  }
 }
 
 @media (min-width: 576px) and (max-width: 991px) {
 
 }
 
+@media (max-width: 767px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  .image-group {
+    width: 95%;
+    margin: inherit auto;
+  }
+}
+
 @media (max-width: 575px) {
   .icon-group {
     margin: 50px 0;
-  }
-  .hide-mobile {
-    display: none;
   }
 }
