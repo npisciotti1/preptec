@@ -19,4 +19,18 @@
 			node.classList.remove('active');
 		}
 	}
+
+	//close slideout nav on mobile click
+	let slideoutNavItems = Array.prototype.slice.call(
+		document.querySelectorAll('#slideoutNav ul a li'));
+
+	for (var i = 0; i < slideoutNavItems.length; i++) {
+		var node = slideoutNavItems[i];
+
+		node.addEventListener('click', function() {
+			document.getElementById('hamburger').click();
+		})
+	}
+
+
 })();

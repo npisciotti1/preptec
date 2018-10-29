@@ -62,18 +62,14 @@
   border-radius: 50px;
   background-color: #1562b0;
   padding-left: 50px;
+  text-decoration: none;
+}
+
+#slideoutNav a:hover {
+  text-decoration: none !important;
 }
 
 
-#slideoutNav ul li:hover a {
+#slideoutNav ul a li:hover {
   color: white;
-}
-
-
-/* #slideoutNav ul li:last-child {
-  border-bottom: 1px solid #105182;
-} */
-
-#slideoutNav ul li:hover {
-  background-color:
 }

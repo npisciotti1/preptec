@@ -45,10 +45,10 @@
     <!-- hidden 'slideout' menu for mobile -->
     <div id="slideoutNav">
       <ul>
-        <li class="nav-item"><a href="#">Home</a></li>
-        <li class="nav-item"><a href="#">About</a></li>
-        <li class="nav-item"><a href="#">Awards</a></li>
-        <li class="nav-item"><a href="#">Contact</a></li>
+        <a href="#home-anchor"><li class="nav-item">Home</li></a>
+        <a href="#about-anchor"><li class="nav-item">About</li></a>
+        <a href="#awards-anchor"><li class="nav-item">Awards</li></a>
+        <a href="#contact-anchor"><li class="nav-item">Contact</li></a>
       </ul>
       <div class="wrapper">
         <button class="btn btn-primary slideout-btn" data-toggle="modal" data-target="#modal">Schedule Demo</button>
@@ -70,16 +70,18 @@
       </div>
       <div class="menu col-sm-6 container">
         <ul class="full-nav">
-          <li class="nav-item"><a href="#">Home</a></li>
-          <li class="nav-item"><a href="#">About</a></li>
-          <li class="nav-item"><a href="#">Awards</a></li>
-          <li class="nav-item"><a href="#">Contact</a></li>
+          <li class="nav-item"><a href="#home-anchor">Home</a></li>
+          <li class="nav-item"><a href="#about-anchor">About</a></li>
+          <li class="nav-item"><a href="#awards-anchor">Awards</a></li>
+          <li class="nav-item"><a href="#contact-anchor">Contact</a></li>
         </ul>
       </div>
     </nav>
 
     <div class="spacer25"></div>
     <div class="spacer100"></div>
+
+      <div id="home-anchor" class="scroll-anchor"></div>
 
       <div class="banner-main">
         <div class="banner-img-wrap">
@@ -97,6 +99,8 @@
       </div>
 
       <div class="spacer75"></div>
+
+      <div id="about-anchor" class="scroll-anchor" ></div>
 
       <!-- Main Section -->
       <div class="wrapper">
@@ -156,6 +160,9 @@
 
       <div class="spacer50"></div>
 
+
+      <div id="awards-anchor" class="scroll-anchor" ></div>
+
       <div class="wrapper">
         <h3 class="text-center font-main awardheader">We are the distinct recipient of the Homeland Security Award for eight consecutive years.</h3>
 
@@ -173,6 +180,8 @@
       </div>
 
       <div class="spacer100"></div>
+
+      <div id="contact-anchor" class="scroll-anchor" ></div>
 
       <!-- Contact -->
       <div id="contact" class="wrapper font-main">
@@ -234,6 +243,10 @@
 
       <!-- external stuff -->
       <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+      <script>
+	     var scroll = new SmoothScroll('a[href*="#"]');
+      </script>
     </div>
   </body>
 
